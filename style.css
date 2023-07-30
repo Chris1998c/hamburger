@@ -1,0 +1,113 @@
+body {
+    height: 0px;
+    margin: 1%;
+    padding: 10px;
+    
+   
+  }
+
+  .nav{
+    margin-left: 5%;
+    background-color: #1F456E;
+    padding: 2%;
+  }
+  span{
+    margin:20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+  }
+
+  .drop {
+    display: none;
+  }
+  
+  .dropdown-container:hover .drop {
+    display: block;
+  }
+  
+  .casella{
+    margin-left: 35%;
+  }
+
+#search{
+  height: 35px;
+    width: 150px;
+    border-radius: 5px;
+}
+#search:hover{
+  background-color: green;
+  color: white;
+}
+  button{
+    height: 30px;
+    width: 70px;
+    border-radius: 15%;
+    background-color: #1F456E;
+    border-bottom: 100%;
+    border-color: yellow;
+    color: yellow;
+    
+  }
+
+  button:hover{
+    background-color: green;
+    color: white;
+  }
+  
+
+  .tab5{
+    opacity: 0.5;
+  }
+
+  
+  .hamburger-icon {
+    display: none; 
+    width: 35px;
+    height: 24px;
+    position: relative;
+    background-color: #fff;
+  }
+  
+ 
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 3px;
+
+  }
+  
+
+  .hamburger-icon::before {
+    top: 0;
+  }
+  
+  .hamburger-icon::after {
+    bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: end; 
+    }
+  
+    .hamburger-icon {
+      display: block; 
+    }
+  
+    span {
+      display: none;
+    }
+  }
